@@ -39,7 +39,7 @@ return [
     /**
      * @var string The public URL to the dev server (what appears in `<script src="">` tags
      */
-    'devServerPublic' => 'http://localhost:3000/',
+    'devServerPublic' => 'http://localhost:5173/',
 
     /**
      * @var string The public URL to use when not using the dev server
@@ -67,7 +67,7 @@ return [
     /**
      * @var bool Should we check for the presence of the dev server by pinging $devServerInternal to make sure it's running?
      */
-    'checkDevServer' => false,
+    'checkDevServer' => true,
 
     /**
      * @var bool Whether the react-refresh-shim should be included
@@ -82,13 +82,12 @@ return [
     /**
      * @var string File system path (or URL) to where the Critical CSS files are stored
      */
-    'criticalPath' => '@webroot/dist/criticalcss',
+//    'criticalPath' => '@webroot/dist/criticalcss',
 
     /**
      * @var string the suffix added to the name of the currently rendering template for the critical css file name
      */
-    'criticalSuffix' => '_critical.min.css',
-
+//    'criticalSuffix' => '_critical.min.css',
     /**
      * @var bool Whether an onload handler should be added to <script> tags to fire a custom event when the script has loaded
      */
