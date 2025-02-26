@@ -39,7 +39,7 @@ return [
     /**
      * @var string The public URL to the dev server (what appears in `<script src="">` tags
      */
-    'devServerPublic' => 'http://localhost:5173/',
+    'devServerPublic' => App::env('PRIMARY_SITE_URL') . ':5173',
 
     /**
      * @var string The public URL to use when not using the dev server
@@ -62,7 +62,7 @@ return [
      *              This can be the same as `$devServerPublic`, but may be different in containerized or VM setups.
      *              ONLY used if $checkDevServer = true
      */
-    'devServerInternal' => '',
+    'devServerInternal' => 'http://localhost:5173',
 
     /**
      * @var bool Should we check for the presence of the dev server by pinging $devServerInternal to make sure it's running?

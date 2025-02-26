@@ -1,6 +1,21 @@
 import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
+import ViteRestart from 'vite-plugin-restart';
+import viteCompression from 'vite-plugin-compression';
 
-export default defineConfig({
+export default defineConfig(({command}) => ({
+    base: command === 'serve' ? '/' : '/dist/',
+    plugins: [
+        tailwindcss(),
+        ViteRestart(
+            {
+                restart: ['./templates/**/*']
+            }
+       ),
+        viteCompression({
+            filter: /\.(mjs|json|css|map)$/i,
+        }),
+    ],
     build: {
         manifest: true,
         rollupOptions: {
@@ -17,8 +32,9 @@ export default defineConfig({
         cors: {
             origin: /https?:\/\/([A-Za-z0-9\-\.]+)?(localhost|\.local|\.test|\.site)(?::\d+)?$/
         },
+        origin: "https://craftcms-vite-tailwind.ddev.site:5173",
         watch: {
             ignored: ['./storage/**', './vendor/**', './web/**'],
         }
     }
-});
+}));
