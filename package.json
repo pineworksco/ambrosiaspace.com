@@ -1,0 +1,11 @@
+{
+  "name": "Craft Vite Tailwind",
+  "type": "module",
+  "devDependencies": {
+    "vite": "^6.2.0"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  }
+}
