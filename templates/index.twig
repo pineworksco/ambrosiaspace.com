@@ -6,8 +6,7 @@
     <title>Welcome to Craft CMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
-    <script type="module" src="http://192.168.147.2:5173/src/js/app.js
-"></script>
+    {{ craft.vite.script("src/js/app.js", false) }}
     <style>
         html,
         body {

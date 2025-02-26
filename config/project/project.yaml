@@ -1,4 +1,4 @@
-dateModified: 1740581214
+dateModified: 1740599042
 email:
   fromEmail: ryan@craftquest.io
   fromName: 'Craft CMS Vite Tailwind'
@@ -7,6 +7,11 @@ meta:
   __names__:
     45a00e92-2550-47ce-b789-33064e5da296: 'Craft CMS Vite Tailwind' # Craft CMS Vite Tailwind
     88a82adb-74b9-4d14-b4bf-8e9a26d20d3e: 'Craft CMS Vite Tailwind' # Craft CMS Vite Tailwind
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
