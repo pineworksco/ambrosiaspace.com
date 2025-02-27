@@ -26,6 +26,16 @@ export default defineConfig(({command}) => ({
                     }
                 }
             },
+            stylelint: {
+                lintCommand: 'stylelint ./src/css/*.{css} --allow-empty-input --fix',
+                dev: {
+                    overrideConfig: {
+                        allowEmptyInput: true,
+                        cache: true,
+                        fix: false
+                    }
+                }
+            }
         })
     ],
     build: {
