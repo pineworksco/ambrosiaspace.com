@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import ViteRestart from 'vite-plugin-restart';
 import viteCompression from 'vite-plugin-compression';
+import checker from 'vite-plugin-checker';
 
 export default defineConfig(({command}) => ({
     base: command === 'serve' ? '/' : '/dist/',
@@ -15,6 +16,17 @@ export default defineConfig(({command}) => ({
         viteCompression({
             filter: /\.(mjs|json|css|map)$/i,
         }),
+        checker({
+            eslint: {
+                lintCommand: 'eslint "./src/**/*.{js,ts}"',
+                useFlatConfig: true,
+                dev: {
+                    overrideConfig: {
+                        cache: true,
+                    }
+                }
+            },
+        })
     ],
     build: {
         manifest: true,
