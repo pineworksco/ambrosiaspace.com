@@ -1,6 +1,7 @@
 {
   "name": "Craft Vite Tailwind",
   "type": "module",
+  "version": "1.0.0",
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "eslint": "^9.21.0",
