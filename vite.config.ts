@@ -4,9 +4,24 @@ import ViteRestart from 'vite-plugin-restart';
 import viteCompression from 'vite-plugin-compression';
 import checker from 'vite-plugin-checker';
 
+
 export default defineConfig(({command}) => ({
     base: command === 'serve' ? '/' : '/dist/',
     plugins: [
+        checker({
+            stylelint: {
+                lintCommand: 'stylelint "src/**/*.css"'
+            },
+            eslint: {
+                lintCommand: 'eslint "./src/**/*.{js,ts}"',
+                useFlatConfig: true,
+                dev: {
+                    overrideConfig: {
+                        cache: true,
+                    }
+                }
+            }
+        }),
         tailwindcss(),
         ViteRestart(
             {
@@ -16,27 +31,6 @@ export default defineConfig(({command}) => ({
         viteCompression({
             filter: /\.(mjs|json|css|map)$/i,
         }),
-        checker({
-            eslint: {
-                lintCommand: 'eslint "./src/**/*.{js,ts}"',
-                useFlatConfig: true,
-                dev: {
-                    overrideConfig: {
-                        cache: true,
-                    }
-                }
-            },
-            stylelint: {
-                lintCommand: 'stylelint ./src/css/*.{css} --allow-empty-input --fix',
-                dev: {
-                    overrideConfig: {
-                        allowEmptyInput: true,
-                        cache: true,
-                        fix: false
-                    }
-                }
-            }
-        })
     ],
     build: {
         manifest: true,
