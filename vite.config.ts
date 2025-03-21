@@ -4,7 +4,6 @@ import ViteRestart from 'vite-plugin-restart';
 import viteCompression from 'vite-plugin-compression';
 import checker from 'vite-plugin-checker';
 
-
 export default defineConfig(({command}) => ({
     base: command === 'serve' ? '/' : '/dist/',
     plugins: [
@@ -13,7 +12,7 @@ export default defineConfig(({command}) => ({
                 lintCommand: 'stylelint "src/**/*.css"'
             },
             eslint: {
-                lintCommand: 'eslint "./src/**/*.{js,ts}"',
+                lintCommand: 'eslint "src/**/*.js"',
                 useFlatConfig: true,
                 dev: {
                     overrideConfig: {
@@ -23,11 +22,6 @@ export default defineConfig(({command}) => ({
             }
         }),
         tailwindcss(),
-        ViteRestart(
-            {
-                restart: ['./templates/**/*']
-            }
-       ),
         viteCompression({
             filter: /\.(mjs|json|css|map)$/i,
         }),
