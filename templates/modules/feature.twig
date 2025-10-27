@@ -1,0 +1,33 @@
+{% extends "modules/default" %}
+{% set asset = block.image.asset.one() %}
+
+{% block blockClasses %}
+{% if not block.darkMode %}bg-asmc-tan{% endif %}
+{% endblock %}
+
+{% block blockContent %}
+<div class="flex flex-col md:flex-row gap-1 max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16 {% if not block.topSpacing %}!pt-1{% endif %} {% if not block.bottomSpacing %}!pb-1{% endif %}">
+	<article class="flex flex-col items-start justify-center md:w-1/2 p-6 md:p-8 lg:p-12 xl:p-16 bg-white text-asmc-black rounded-sm {% if block.imagePosition == 'left' %}order-2{% endif %}">
+		{% if block.eyebrow %}
+		<p class="font-mono text-xs md:text-sm">{{ block.eyebrow }}</p>
+		{% endif %}
+		<h2 class="my-6 xl:my-8 font-bold text-2xl xs:text-4xl xl:text-5xl leading-[1.1] {% if block.darkMode %}text-asmc-blue{% else %}text-asmc-gold{% endif %}">{{ block.title }}</h2>
+		{% if block.text %}
+		<div class="font-mono longform">{{ block.text }}</div>
+		{% endif %}
+		{% if block.button %}
+		<a href="{{ block.button }}" class="inline-block mt-6 px-4 py-3 border border-asmc-blue font-semibold text-asmc-blue hover:text-white hover:bg-asmc-blue">{{ block.button.label }} &rarr;</a>
+		{% endif %}
+	</article>
+	<figure class="flex flex-col items-center justify-center md:w-1/2 p-8 xs:p-12 sm:p-16 md:p-16 lg:p-24 bg-asmc-gold rounded-sm">
+		{% if asset %}
+		<img src="{{ asset.getUrl('full') }}" class="{% if block.image.stylized %}mix-blend-multiply{% endif %}" />
+		{% endif %}
+		{% if block.image.caption %}
+		<figcaption class="md:max-w-xs pt-4 font-semibold text-sm">
+			{{ block.image.caption }}
+		</figcaption>
+		{% endif %}
+	</figure>
+</div>
+{% endblock %}

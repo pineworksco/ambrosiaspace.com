@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 54f64a1d-1fa2-4197-aa96-6c979d97fcc6 # Page
+handle: pages
+maxAuthors: null
+name: Pages
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  88a82adb-74b9-4d14-b4bf-8e9a26d20d3e: # Ambrosia Space Manufacturing Company
+    enabledByDefault: true
+    hasUrls: true
+    template: entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 319c5702-5955-4029-91cf-bc0bfdec239f
+type: structure

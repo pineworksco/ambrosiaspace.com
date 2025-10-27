@@ -1,3 +1,42 @@
 @import "tailwindcss" source(none);
 
 @source "../../templates/";
+
+@theme {
+	--breakpoint-2xs: 22rem;
+	--breakpoint-xs: 25rem;
+	--breakpoint-3xl: 120rem;
+	--breakpoint-4xl: 144rem;
+	
+	--color-asmc-black:	#111111;
+	--color-asmc-blue:	#050832;
+	--color-asmc-gold:	#C3A456;
+	--color-asmc-tan:	#E6DED5;
+	
+	--font-sans: "Geist", "SF Pro Display", -apple-system, system-ui, sans-serif;
+	--font-mono: "Geist Mono", "SF Mono", SFMono-Regular, ui-monospace,
+	"DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+
+@layer base {
+	::selection {
+		@apply bg-asmc-gold/60;
+		@apply text-asmc-black;
+	}
+	
+	body {
+		@apply font-sans;
+		@apply text-white;
+	}
+	
+	.longform a {
+		@apply underline;
+		@apply hover:text-asmc-gold;
+	}
+}
+
+@layer components {
+	.max-w-site {
+		@apply max-w-[85rem];
+	}
+}

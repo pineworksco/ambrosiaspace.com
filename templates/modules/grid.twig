@@ -1,0 +1,19 @@
+{% extends "modules/default" %}
+
+{% block blockClasses %}
+bg-asmc-tan text-asmc-black
+{% endblock %}
+
+{% block blockContent %}
+<div class="max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16 grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
+	{% for gridItem in block.gridItems %}
+	<article class="flex flex-col gap-4 md:gap-8 p-6 lg:p-8 bg-white rounded-lg lg:aspect-square">
+		<h3 class="font-mono text-xl lg:text-2xl">{{ gridItem.title }}</h3>
+		<div class="flex-1 font-mono longform">{% if gridItem.text %}{{ gridItem.text }}{% endif %}</div>
+		{% if gridItem.button %}
+		<a href="{{ gridItem.button }}" class="block px-4 py-3 border border-asmc-gold font-semibold text-asmc-blue hover:text-white hover:bg-asmc-gold">{{ gridItem.button.label }} &rarr;</a>
+		{% endif %}
+	</article>
+	{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+columnSuffix: null
+handle: modules
+instructions: null
+name: Modules
+searchable: false
+settings:
+  createButtonLabel: 'New module'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - b2c03297-44b8-40b1-82cd-001bf51011e8 # Feature
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - e527ad7b-f272-4e6d-97c6-ab32252afa11 # Big Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 851aa807-5042-4526-a6a9-1a107ba6ce66 # Grid
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 190a6916-6a81-4626-a188-9c9e95a060c2 # People Listing
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 63e81627-f42b-495e-a7c7-6f4e42efdc35 # Image
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

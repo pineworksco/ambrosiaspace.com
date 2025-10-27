@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: gridItems
+instructions: null
+name: 'Grid Items'
+searchable: false
+settings:
+  createButtonLabel: 'New item'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - e32214a7-85d3-48e4-94c3-3aec995098d1 # Grid Item
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

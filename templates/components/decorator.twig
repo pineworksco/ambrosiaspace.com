@@ -1,0 +1,7 @@
+{% switch decorator.decoratorType %}
+	{% case 'star' %}
+		<i class="block fill-asmc-gold w-4 h-4 md:w-8 md:h-8">{% include 'icons/star' %}</i>
+	{% case 'text' %}
+		<p class="font-mono text-xs md:text-sm {% if darkMode %}text-asmc-gold{% endif %}">{{ decorator.decoratorText }}</p>
+	{% default %}
+{% endswitch %}

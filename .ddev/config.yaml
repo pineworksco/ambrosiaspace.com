@@ -1,4 +1,4 @@
-name: craftcms-vite-tailwind
+name: ambrosia
 type: craftcms
 docroot: web
 php_version: "8.2"

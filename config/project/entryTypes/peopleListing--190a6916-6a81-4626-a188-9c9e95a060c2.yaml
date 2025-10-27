@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  f1d29d5f-7f26-4e0a-b497-ca4bcacffea5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-27T02:39:20+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 98e1c883-e4bb-4f43-b092-59d0bf6b3bc8 # People
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afe5abd3-8a1e-40bd-97e7-b3044d9ef733
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 628c45d7-bf14-4712-aab9-0b7fd5b047a2
+        userCondition: null
+handle: peopleListing
+hasTitleField: false
+icon: null
+name: 'People Listing'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

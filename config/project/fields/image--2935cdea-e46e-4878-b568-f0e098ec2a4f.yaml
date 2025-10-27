@@ -1,0 +1,160 @@
+columnSuffix: null
+handle: image
+instructions: null
+name: Image
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 1ae2bc73-51aa-4bf1-8438-6bbb46a13bdc
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 69645877-4358-4182-b54e-e622a0013905
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - true
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 25
+                            10:
+                              - dateAdded
+                              - '2025-10-27T01:14:28+00:00'
+                            11:
+                              - uid
+                              - 4d9dc53f-0f89-4185-ae47-df93f868ddcf
+                            14:
+                              - fieldUid
+                              - 6996b9dd-5274-4574-8603-ffe2aee14e21 # Asset
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - stylized
+                            2:
+                              - label
+                              - Stylized
+                            3:
+                              - instructions
+                              - 'When turned on, image will be stylized to fit with the Ambrosia branding. When turned off, image will be displayed in its raw format.'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 25
+                            10:
+                              - dateAdded
+                              - '2025-10-27T02:58:59+00:00'
+                            11:
+                              - uid
+                              - c87b76ab-b772-481c-aa02-5dbeb7b5e2a4
+                            13:
+                              - elementCondition
+                              -
+                                __assoc__:
+                                  -
+                                    - elementType
+                                    - craft\elements\ContentBlock
+                                  -
+                                    - fieldContext
+                                    - global
+                                  -
+                                    - class
+                                    - craft\elements\conditions\ElementCondition
+                                  -
+                                    - conditionRules
+                                    -
+                                      - { __assoc__: { 0: [class, craft\fields\conditions\RelationalFieldConditionRule], 1: [uid, 464f1814-2fdc-44b9-9858-38d4b568c6cb], 2: [operator, notempty], 4: [fieldUid, 6996b9dd-5274-4574-8603-ffe2aee14e21], 5: [layoutElementUid, 4d9dc53f-0f89-4185-ae47-df93f868ddcf] } } # Asset
+                            14:
+                              - fieldUid
+                              - 712e2ee5-eb54-4224-b7a1-fc87c8832892 # Lightswitch
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - caption
+                            2:
+                              - label
+                              - Caption
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-10-27T01:14:28+00:00'
+                            11:
+                              - uid
+                              - 21368d75-9ded-43ce-9509-26a20beef23b
+                            13:
+                              - elementCondition
+                              -
+                                __assoc__:
+                                  -
+                                    - elementType
+                                    - craft\elements\ContentBlock
+                                  -
+                                    - fieldContext
+                                    - global
+                                  -
+                                    - class
+                                    - craft\elements\conditions\ElementCondition
+                                  -
+                                    - conditionRules
+                                    -
+                                      - { __assoc__: { 0: [class, craft\fields\conditions\RelationalFieldConditionRule], 1: [uid, c13d9655-4c0f-4942-ae65-d71130ac51bc], 2: [operator, notempty], 4: [fieldUid, 6996b9dd-5274-4574-8603-ffe2aee14e21], 5: [layoutElementUid, 4d9dc53f-0f89-4185-ae47-df93f868ddcf] } } # Asset
+                            14:
+                              - fieldUid
+                              - 68006928-9abf-4f12-aca6-5a03b6d6e672 # Text
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

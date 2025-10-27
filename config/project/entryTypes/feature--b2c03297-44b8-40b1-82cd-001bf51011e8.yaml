@@ -1,0 +1,195 @@
+color: null
+description: null
+fieldLayouts:
+  966baff9-57a2-47ac-ae28-9f6e70d1eaf8:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-26T20:29:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0e7e089d-6a06-47ef-9e53-89909921a860
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-26T20:44:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a9b52af2-d6a8-44b8-8158-9d3be52a0d3b # Plain Text
+            handle: eyebrow
+            includeInCards: false
+            instructions: 'The small text that appears visually above the title.'
+            label: Eyebrow
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a6fc538-caf5-4798-a7fa-4830353286e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-26T20:44:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 68006928-9abf-4f12-aca6-5a03b6d6e672 # Text
+            handle: null
+            includeInCards: false
+            instructions: 'The main, longform text that appears in the feature block.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a08474ce-9f95-422c-aaec-efef319931b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-27T01:14:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2935cdea-e46e-4878-b568-f0e098ec2a4f # Image
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 754c38f8-5445-4acf-ad86-8adf122ab477
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-10-27T03:01:25+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 703d0ba8-0c19-40a0-badf-501c9c9c54f2 # Position
+            handle: imagePosition
+            includeInCards: false
+            instructions: null
+            label: 'Image Position'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 440e4cd4-ad7b-4fcf-ae62-b65845128284
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-26T20:44:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 46c73757-35e7-4b10-b847-51ab5433328d # Hyperlink
+            handle: button
+            includeInCards: false
+            instructions: 'The call to action button that appears at the end of the feature block.'
+            label: Button
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f476787e-4565-4b29-ad86-4ddc4ec56102
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c8134dc4-842f-46e5-8374-74f3d49f7886
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-27T01:20:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 712e2ee5-eb54-4224-b7a1-fc87c8832892 # Lightswitch
+            handle: darkMode
+            includeInCards: false
+            instructions: null
+            label: 'Dark Mode'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14028e97-9956-47e4-9e19-84a7e64e890f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-27T01:21:38+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 712e2ee5-eb54-4224-b7a1-fc87c8832892 # Lightswitch
+            handle: topSpacing
+            includeInCards: false
+            instructions: 'Should there be spacing above this module?'
+            label: 'Top Spacing'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66b5166c-6b0e-4fec-b4ba-1ba2104e1944
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-27T01:21:38+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 712e2ee5-eb54-4224-b7a1-fc87c8832892 # Lightswitch
+            handle: bottomSpacing
+            includeInCards: false
+            instructions: 'Should there be spacing below this module?'
+            label: 'Bottom Spacing'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2481edd-d668-4a0f-a2cc-b175265567cd
+            userCondition: null
+            warning: null
+            width: 25
+        name: Appearance
+        uid: b2a23571-7e09-4af1-bc1f-b62b389dd9ef
+        userCondition: null
+handle: feature
+hasTitleField: true
+icon: null
+name: Feature
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

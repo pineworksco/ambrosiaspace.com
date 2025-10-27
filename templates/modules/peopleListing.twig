@@ -1,0 +1,27 @@
+{% extends "modules/default" %}
+
+{% block blockClasses %}
+bg-asmc-tan text-asmc-black
+{% endblock %}
+
+{% block blockContent %}
+<div class="max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16">
+	{% for person in block.people %}
+	{% set asset = person.image.one() %}
+
+	<article class="md:flex md:items-stretch mb-8 last:mb-0 bg-white group">
+		{% if asset %}
+		<div class="flex items-center justify-center md:w-1/3 p-4 xs:p-8 lg:p-12 bg-asmc-gold group-even:order-2">
+			<img src="{{ asset.getUrl('small') }}" class="grayscale mix-blend-multiply" />
+		</div>
+		{% endif %}
+
+		<div class="flex-1 md:flex md:flex-col md:items-start md:justify-center p-6 lg:p-12 xl:p-16">
+			<h3 class="font-mono text-xl sm:text-2xl">{{ person.title }}</h3>
+			{% if person.role %}<p class="sm:mt-1 sm:text-lg font-semibold text-asmc-gold">{{ person.role }}</p>{% endif %}
+			{% if person.bio %}<div class="mt-4 font-mono text-sm xs:text-base leading-relaxed longform">{{ person.bio }}</div>{% endif %}
+		</div>
+	</article>
+	{% endfor %}
+</div>
+{% endblock %}

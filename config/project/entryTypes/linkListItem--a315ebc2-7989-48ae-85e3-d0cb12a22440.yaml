@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  ebb6f09b-ca8a-4e7b-8fff-a3b50d61f4c1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-27T20:05:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 46c73757-35e7-4b10-b847-51ab5433328d # Hyperlink
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef3d36fa-65b3-4fbd-929c-03081bf821d1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-10-27T20:05:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 970e9afc-e436-4f65-8d88-106a3bfbda43 # Lightswitch (Default Off)
+            handle: showAsButton
+            includeInCards: false
+            instructions: 'If on, link will be styled like a button.'
+            label: 'Show as button'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e4cff34-4270-495a-a75c-b39b7017210b
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: d323cfb1-06a2-4719-a629-f0536f1a44fe
+        userCondition: null
+handle: linkListItem
+hasTitleField: false
+icon: null
+name: 'Link List Item'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

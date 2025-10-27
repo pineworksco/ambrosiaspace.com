@@ -1,0 +1,11 @@
+{% extends "modules/default" %}
+
+{% block blockClasses %}
+flex flex-col items-center justify-center gap-4 md:gap-8 py-8 md:py-16 {% if block.darkMode %}bg-asmc-blue text-white{% else %}bg-white text-asmc-blue{% endif %} text-center
+{% endblock %}
+
+{% block blockContent %}
+{% include 'components/decorator' with { decorator: block.topDecorator, darkMode: block.darkMode } %}
+<div class="max-w-7xl px-8 sm:px-16 xl:px-8 font-bold text-2xl xs:text-[5vw] xl:text-7xl leading-tight {% if not block.darkMode %}text-asmc-gold{% endif %}">{{ block.text }}</div>
+{% include 'components/decorator' with { decorator: block.bottomDecorator, darkMode: block.darkMode } %}
+{% endblock %}

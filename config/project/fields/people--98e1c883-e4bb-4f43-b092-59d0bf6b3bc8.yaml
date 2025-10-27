@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: people
+instructions: null
+name: People
+searchable: false
+settings:
+  createButtonLabel: 'New person'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 490807f9-8e12-43ce-8fee-22730b42f3b4 # Person
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

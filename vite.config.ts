@@ -42,7 +42,7 @@ export default defineConfig(({command}) => ({
         cors: {
             origin: /https?:\/\/([A-Za-z0-9\-\.]+)?(localhost|\.local|\.test|\.site)(?::\d+)?$/
         },
-        origin: "https://craftcms-vite-tailwind.ddev.site:5173",
+        origin: "https://ambrosia.ddev.site:5173",
         watch: {
             ignored: ['./storage/**', './vendor/**', './web/**'],
         }

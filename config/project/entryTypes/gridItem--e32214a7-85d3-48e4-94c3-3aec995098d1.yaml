@@ -1,0 +1,90 @@
+color: null
+description: null
+fieldLayouts:
+  fabf7a18-474b-4884-89cb-a21f5f8106ad:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:362e7351-914e-441d-b1ed-f04b6aeff661'
+      - 'layoutElement:a87fc3a2-5e4d-4964-8a88-1c431a270ab5'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-27T02:19:34+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 709dda4b-7a98-48bd-8c13-3851a85a6446
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-27T02:21:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 68006928-9abf-4f12-aca6-5a03b6d6e672 # Text
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a87fc3a2-5e4d-4964-8a88-1c431a270ab5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-27T02:21:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 46c73757-35e7-4b10-b847-51ab5433328d # Hyperlink
+            handle: button
+            includeInCards: true
+            instructions: null
+            label: Button
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 362e7351-914e-441d-b1ed-f04b6aeff661
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 30288e57-35f0-4599-a2a6-f4162273c47e
+        userCondition: null
+handle: gridItem
+hasTitleField: true
+icon: null
+name: 'Grid Item'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

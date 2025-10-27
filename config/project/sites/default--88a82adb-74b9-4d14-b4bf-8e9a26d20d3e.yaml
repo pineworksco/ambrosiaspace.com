@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: 'Craft CMS Vite Tailwind'
+name: 'Ambrosia Space Manufacturing Company'
 primary: true
-siteGroup: 45a00e92-2550-47ce-b789-33064e5da296 # Craft CMS Vite Tailwind
+siteGroup: 45a00e92-2550-47ce-b789-33064e5da296 # Ambrosia
 sortOrder: 1

@@ -1,0 +1,99 @@
+color: null
+description: null
+fieldLayouts:
+  30e732b2-7d50-475b-a137-42ec8da9986a:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:29b186c5-f685-4be8-a307-b0738c899ab4'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-27T15:19:17+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 68006928-9abf-4f12-aca6-5a03b6d6e672 # Text
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29b186c5-f685-4be8-a307-b0738c899ab4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-25T12:54:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e8458783-3f6a-43e3-8b85-f6b6ec9c2974 # Top Decorator
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c1c36cc-73ad-4707-a822-4dc3a341bf2f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-10-27T03:28:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f6b01801-37c0-4e3f-ad44-20d619226d7d # Bottom Decorator
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90124b10-7db8-4013-bbd7-0ca03a50cf64
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: be714f76-54a3-42a4-91ca-1003fe2f449a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-27T02:50:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 712e2ee5-eb54-4224-b7a1-fc87c8832892 # Lightswitch
+            handle: darkMode
+            includeInCards: false
+            instructions: null
+            label: 'Dark Mode'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd1877b4-b584-45b0-bed6-ec29b69e4643
+            userCondition: null
+            warning: null
+            width: 25
+        name: Appearance
+        uid: 1f28e69f-ee17-4de9-a453-e88784a9c59c
+        userCondition: null
+handle: bigText
+hasTitleField: false
+icon: null
+name: 'Big Text'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

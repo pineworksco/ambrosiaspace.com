@@ -1,0 +1,19 @@
+{% extends "modules/default" %}
+{% set asset = block.image.asset.one() %}
+
+{% block blockClasses %}
+bg-asmc-gold
+{% endblock %}
+
+{% block blockContent %}
+<figure class="relative 2xl:max-w-7xl mx-auto 2xl:px-8">
+	{% if asset %}
+	<img src="{{ asset.getUrl('full') }}" class="{% if block.image.stylized %}mix-blend-multiply{% endif %}" />
+	{% endif %}
+	{% if block.image.caption %}
+	<figcaption class="absolute bottom-4 left-4 lg:left-8 2xl:left-12 max-w-[60%] p-4 font-semibold text-sm bg-black/60">
+		{{ block.image.caption }}
+	</figcaption>
+	{% endif %}
+</figure>
+{% endblock %}

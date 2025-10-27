@@ -1,0 +1,108 @@
+columnSuffix: null
+handle: topDecorator
+instructions: null
+name: 'Top Decorator'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - a89c1a5d-c277-44d0-b209-20f4e9f815f1
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 3aaa6b42-4bec-4b6a-a666-9e01ed31e3fc
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-10-25T12:54:36+00:00'
+                            11:
+                              - uid
+                              - 0b806bbc-71ae-4b37-aeef-4ece789c11f3
+                            14:
+                              - fieldUid
+                              - 9326f3fe-85dc-4d36-be66-51893eefcd06 # Decorator Type
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - decoratorText
+                            2:
+                              - label
+                              - 'Decorator Text'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-10-25T12:54:36+00:00'
+                            11:
+                              - uid
+                              - 6802c467-ea08-45a9-8ec4-6f62c4f8bb55
+                            13:
+                              - elementCondition
+                              -
+                                __assoc__:
+                                  -
+                                    - elementType
+                                    - craft\elements\ContentBlock
+                                  -
+                                    - fieldContext
+                                    - global
+                                  -
+                                    - class
+                                    - craft\elements\conditions\ElementCondition
+                                  -
+                                    - conditionRules
+                                    -
+                                      - { __assoc__: [[class, craft\fields\conditions\OptionsFieldConditionRule], [uid, ee2b9d23-7246-4cb3-86e2-fc5cd0cdaf1a], [operator, in], [values, [text]], [fieldUid, 9326f3fe-85dc-4d36-be66-51893eefcd06], [layoutElementUid, 0b806bbc-71ae-4b37-aeef-4ece789c11f3]] } # Decorator Type
+                            14:
+                              - fieldUid
+                              - a9b52af2-d6a8-44b8-8158-9d3be52a0d3b # Plain Text
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

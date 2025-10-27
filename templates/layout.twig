@@ -1,0 +1,63 @@
+{% set expiry = now|date_modify('+10 minutes') %}
+{% header "Cache-Control: max-age=600" %}
+{% header "Pragma: cache" %}
+{% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
+<!DOCTYPE html>
+<html class="no-js bg-asmc-blue">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{% if pageTitle is defined and pageTitle != '' %}{{ pageTitle }} - {% endif %}{{ siteName }}</title>
+	<meta name="description" content="{% if pageDescription is defined and pageDescription != '' %}{{ pageDescription | striptags }}{% endif %}">
+	<meta name="keywords" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="icon" href="/favicon.ico">
+	{{ craft.vite.script("src/js/app.js", false) }}
+	<meta property="og:site_name" content="{{ siteName }}">
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="{{ craft.app.request.absoluteUrl }}" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+	{% block head %}
+	{% endblock %}
+</head>
+<body class="{% if bodyClass is defined and bodyClass != '' %} {{ bodyClass }}{% endif %}">
+	{% block headerWrapper %}
+	<header class="flex gap-1 mx-auto pt-4 px-4 lg:pt-8 lg:px-8 font-bold text-asmc-blue max-w-7xl">
+	{% block header %}
+		<a href="/" title="{{ siteName }}" class="flex items-center bg-white rounded-sm"><i class="block w-16 h-16 md:w-20 md:h-20 lg:w-32 lg:h-32 p-4 lg:p-8">{% include 'icons/ambrosia' %}</i></a>
+		<h1 class="hidden sm:block flex-1 sm:flex-initial rounded-sm text-white text-lg md:text-xl lg:text-2xl xl:text-3xl"><a href="/" class="flex items-center justify-center w-full h-full p-4 md:px-8 lg:px-10 bg-asmc-gold rounded-sm font-black uppercase">Ambrosia</a></h1>
+		<nav class="flex flex-1 items-center justify-center p-4 bg-white rounded-sm leading-tight text-sm md:text-base lg:text-lg xl:text-xl">
+			<ul class="flex items-center gap-4 md:gap-8 lg:gap-12 xl:gap-16">
+				{% for navItem in header.navigation %}
+					{% set isActive = navItem.hyperlink == craft.app.request.absoluteUrl %}
+					<li><a href="{{ navItem.hyperlink }}" class="{% if isActive %}text-asmc-gold{% endif %} {% if navItem.showAsButton %}px-4 py-2 lg:py-3 bg-asmc-gold rounded-sm text-white{% endif %}">{{ navItem.hyperlink.label }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+	{% endblock %}
+	</header>
+	{% endblock %}
+	
+	{% block contentWrapper %}
+	<main id="content">
+	{% block content %}
+	{% endblock %}
+	</main>
+	{% endblock %}
+	
+	{% block footerWrapper %}
+	<footer class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 px-4 py-8 md:py-16 text-xs 2xs:text-base text-asmc-gold">
+	{% block footer %}
+		<div class="text-center">
+			<p>{{ siteName }}</p>
+			<p>&copy;{{ now|date('Y') }} All Rights Reserved.</p>
+		</div>
+		<i class="w-24 h-24 lg:w-32 lg:h-32">{% include 'icons/ambrosia-light' %}</i>
+		<p><a href="#" class="inline-block border border-asmc-gold px-4 py-2 md:py-3">Get updates &rarr;</a></p>
+	{% endblock %}
+	</footer>
+	{% endblock %}
+</body>
+</html>
