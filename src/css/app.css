@@ -8,14 +8,14 @@
 	--breakpoint-3xl: 120rem;
 	--breakpoint-4xl: 144rem;
 	
-	--color-asmc-black:	#111111;
+	--color-asmc-black:	#111;
 	--color-asmc-blue:	#050832;
 	--color-asmc-gold:	#C3A456;
 	--color-asmc-tan:	#E6DED5;
 	
 	--font-sans: "Geist", "SF Pro Display", -apple-system, system-ui, sans-serif;
-	--font-mono: "Geist Mono", "SF Mono", SFMono-Regular, ui-monospace,
-	"DejaVu Sans Mono", Menlo, Consolas, monospace;
+	--font-mono: "Geist Mono", "SF Mono", sfmono-regular, ui-monospace,
+	"DejaVu Sans Mono", menlo, consolas, monospace;
 }
 
 @layer base {
