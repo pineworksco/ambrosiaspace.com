@@ -1,4 +1,4 @@
-dateModified: 1761595595
+dateModified: 1761618485
 email:
   fromEmail: hello@ambrosiaspace.com
   fromName: 'Ambrosia Space Manufacturing Corporation'
@@ -12,9 +12,9 @@ fs:
     hasUrls: true
     name: Images
     settings:
-      path: '@webroot/m/images'
+      path: m/images
     type: craft\fs\Local
-    url: $PRIMARY_SITE_URL/m/images
+    url: /m/images
 meta:
   __names__:
     1d209306-01a4-4dc7-bc72-da0723fee5aa: Header # Header
