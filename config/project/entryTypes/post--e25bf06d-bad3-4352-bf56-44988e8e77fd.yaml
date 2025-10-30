@@ -1,8 +1,10 @@
 color: null
-description: 'A page built up of modules. Meant for landing and featured pages, not longform content.'
+description: 'A longform piece of content.'
 fieldLayouts:
-  ea3cefb5-6bef-42cf-b4f2-56c46ded2675:
+  70428863-2365-41d4-a275-3c3e1e579dd7:
     cardThumbAlignment: end
+    cardView:
+      - postDate
     tabs:
       -
         elementCondition: null
@@ -12,7 +14,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-10-16T02:41:39+00:00'
+            dateAdded: '2025-10-28T02:35:29+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -33,12 +35,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 02243e6f-7461-4cf3-ab60-ef2d8c6c1989
+            uid: b9809b09-754f-4ac3-8119-2e5e82aa8359
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-10-16T02:44:24+00:00'
+            dateAdded: '2025-10-28T14:31:20+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 68006928-9abf-4f12-aca6-5a03b6d6e672 # Text
@@ -50,15 +52,15 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 84522c4a-a16d-4931-9fe4-eee7c085d454
+            uid: afb72198-8334-4f7d-b58e-3aa1edef834c
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-10-25T12:54:56+00:00'
+            dateAdded: '2025-10-28T02:47:45+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: b0f092c9-4cd7-4c5d-be70-089782fd85dd # Modules
+            fieldUid: 2935cdea-e46e-4878-b568-f0e098ec2a4f # Image
             handle: null
             includeInCards: false
             instructions: null
@@ -67,17 +69,34 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6a83c98b-49d8-48a6-824a-dda1833e0e2a
+            uid: ae3488b4-fd80-4228-be80-9630ba7440d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-28T02:47:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4e561f16-ec34-404b-aff8-9759d01bb5c1 # Rich Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da4638a9-37aa-4bf3-b765-4c47c8acc548
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 338f0d98-87e7-4a74-a454-e6c71bd195ba
+        uid: 9d628660-6529-4f96-af9c-44e6118c10c5
         userCondition: null
-handle: page
+handle: post
 hasTitleField: true
-icon: file
-name: Page
+icon: file-lines
+name: Post
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

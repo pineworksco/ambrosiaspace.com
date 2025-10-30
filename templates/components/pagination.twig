@@ -1,0 +1,46 @@
+{% if craft.app.request.pageNum > pageInfo.totalPages %}
+{% exit 404 %}
+{% endif %}
+
+{% if nextText is not defined %}
+{% set nextText = "Older" %}
+{% endif %}
+
+{% if prevText is not defined %}
+{% set prevText = "Newer" %}
+{% endif %}
+
+{% if pageInfo.totalPages > 1 %}
+<nav class="flex flex-col md:flex-row flex-wrap justify-between items-center gap-4 mt-16 font-bold font-mono">
+	<div class="text-xs text-center">
+		Showing {{ pageInfo.first }}–{{ pageInfo.last }} of {{ pageInfo.total }}
+	</div>
+
+	<div class="text-sm flex flex-wrap items-center gap-4">
+		{# Prev Link #}
+		{% if pageInfo.prevUrl %}
+			<a href="{{ pageInfo.prevUrl }}" class="flex items-center gap-2">&larr; Prev</a>
+		{% else %}
+			<span class="flex items-center gap-2 opacity-20">&larr; Prev</span>
+		{% endif %}
+
+		{# Page Numbers #}
+		{% for page, url in pageInfo.getPrevUrls(5) %}
+			<a href="{{ url }}" class="block w-10 h-10 flex items-center justify-center leading-none rounded-full hover:bg-asmc-tan">{{ page }}</a>
+		{% endfor %}
+		
+		<span class="block w-10 h-10 flex items-center justify-center leading-none rounded-full bg-asmc-gold text-asmc-blue">{{ pageInfo.currentPage }}</span>
+		
+		{% for page, url in pageInfo.getNextUrls(5) %}
+			<a href="{{ url }}" class="block w-10 h-10 flex items-center justify-center leading-none rounded-full hover:bg-asmc-tan">{{ page }}</a>
+		{% endfor %}
+
+		{# Next Link #}
+		{% if pageInfo.nextUrl %}
+			<a href="{{ pageInfo.nextUrl }}" class="flex items-center gap-2">Next &rarr;</a>
+		{% else %}
+			<span class="flex items-center gap-2 opacity-20">Next &rarr;</span>
+		{% endif %}
+	</div>
+</nav>
+{% endif %}

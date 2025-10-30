@@ -1,0 +1,28 @@
+columnSuffix: null
+handle: channels
+instructions: null
+name: Channels
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Updates
+        -
+          - value
+          - updates
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect

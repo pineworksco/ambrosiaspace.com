@@ -1,0 +1,10 @@
+{% set liClass = "inline" %}
+{% set aClass = "hover:underline" %}
+
+<ul class="breadcrumbs max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-12 font-mono text-xs md:text-sm text-asmc-gold leading-loose">
+	<li class="{{ liClass }}"><a href="/">{{ siteName }}</a> &nbsp;&raquo;&nbsp;</li>
+	{% for crumb in entry.getAncestors() %}
+		<li class="{{ liClass }}">{{ crumb.getLink() }} &nbsp;&raquo;&nbsp;</li>
+	{% endfor %}
+	<li class="{{ liClass }}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+</ul>

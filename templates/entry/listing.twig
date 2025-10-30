@@ -1,0 +1,17 @@
+{% extends "entry/default" %}
+
+{% block content %}
+
+{% include 'modules/bigText' with { block: { text: entry.title, darkMode: true, topDecorator: { decoratorType: 'text', decoratorText: siteName }, bottomDecorator: { decoratorType: 'star' } } } %}
+
+<section class="px-4 py-8 lg:px-8 lg:py-16 bg-asmc-tan text-asmc-black">
+	{% paginate craft.entries.section(entry.channels|map(channel => channel.value)).limit(10) as pageInfo, entries %}
+	{% for entry in entries %}
+		<article class="longform max-w-4xl mx-auto p-6 md:p-8 lg:p-12 xl:p-16 bg-white rounded-sm">
+			{% include "teaser" %}
+		</article>
+	{% endfor %}
+	{% include "components/pagination" %}
+</section>
+
+{% endblock %}

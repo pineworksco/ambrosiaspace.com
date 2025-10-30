@@ -11,7 +11,7 @@ bg-asmc-tan text-asmc-black
 		<h3 class="font-mono text-xl lg:text-2xl">{{ gridItem.title }}</h3>
 		<div class="flex-1 font-mono longform">{% if gridItem.text %}{{ gridItem.text }}{% endif %}</div>
 		{% if gridItem.button %}
-		<a href="{{ gridItem.button }}" class="block px-4 py-3 border border-asmc-gold font-semibold text-asmc-blue hover:text-white hover:bg-asmc-gold">{{ gridItem.button.label }} &rarr;</a>
+		<a href="{{ gridItem.button }}" class="block px-4 py-3 border-2 border-asmc-gold font-semibold text-asmc-blue hover:text-white hover:bg-asmc-gold">{{ gridItem.button.label }} &rarr;</a>
 		{% endif %}
 	</article>
 	{% endfor %}

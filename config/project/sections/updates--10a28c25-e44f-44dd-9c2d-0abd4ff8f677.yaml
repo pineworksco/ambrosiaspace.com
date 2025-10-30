@@ -2,14 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 54f64a1d-1fa2-4197-aa96-6c979d97fcc6 # Page
-  -
     uid: e25bf06d-bad3-4352-bf56-44988e8e77fd # Post
-  -
-    uid: ff53a44e-aa10-41a7-a7bd-0081b7595b65 # Listing Page
-handle: pages
+handle: updates
 maxAuthors: null
-name: Pages
+name: Updates
 previewTargets:
   -
     label: 'Primary entry page'
@@ -21,8 +17,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: entry.twig
-    uriFormat: '{parent.uri}/{slug}'
-structure:
-  maxLevels: null
-  uid: 319c5702-5955-4029-91cf-bc0bfdec239f
-type: structure
+    uriFormat: 'updates/{slug}'
+type: channel

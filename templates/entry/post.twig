@@ -1,0 +1,22 @@
+{% extends "entry/default" %}
+{% set asset = entry.image.asset.one() %}
+
+{% block content %}
+{% include 'components/breadcrumbs' %}
+
+<section class="px-4 py-8 lg:px-8 lg:py-16 bg-asmc-tan text-asmc-black">
+	<article class="longform max-w-4xl mx-auto p-6 md:p-8 lg:p-12 xl:p-16 bg-white rounded-sm ">
+		<p class="pt-4 font-mono">{{ entry.postDate|date('F d, Y') }}</p>
+		<h1 class="mt-0">{{ entry.title }}</h1>
+
+		{% if asset %}
+		<figure class="mb-6 md:mb-8 bg-asmc-gold">
+			<img src="{{ asset.getUrl('full') }}" class="{% if entry.image.stylized %}mix-blend-multiply{% endif %}" />
+			
+		</figure>
+		{% endif %}
+	
+		{{ entry.richText }}
+	</article>
+</section>
+{% endblock %}

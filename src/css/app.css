@@ -29,9 +29,73 @@
 		@apply text-white;
 	}
 	
+	.breadcrumbs a {
+		@apply hover:underline;
+	}
+	
+	.longform h1 {
+		@apply my-6;
+		@apply md:my-8;
+		@apply font-bold;
+		@apply text-3xl;
+		@apply sm:text-4xl;
+		@apply lg:text-5xl;
+		@apply text-asmc-gold;
+	}
+	
+	.longform h2 {
+		@apply mb-4;
+		@apply mt-8;
+		@apply font-semibold;
+		@apply text-xl;
+		@apply sm:text-2xl;
+		@apply text-asmc-gold;
+	}
+	
+	.longform h3 {
+		@apply mb-4;
+		@apply mt-8;
+		@apply font-semibold;
+		@apply text-lg;
+		@apply sm:text-xl;
+		@apply text-asmc-gold;
+	}
+	
+	.longform h4,
+	.longform h5,
+	.longform h6 {
+		@apply mb-4;
+		@apply mt-6;
+		@apply font-semibold;
+		@apply text-base;
+		@apply sm:text-lg;
+		@apply text-asmc-blue;
+	}
+	
 	.longform a {
 		@apply underline;
 		@apply hover:text-asmc-gold;
+	}
+	
+	.longform p {
+		@apply mb-4;
+		@apply last:mb-0;
+	}
+	
+	.longform p,
+	.longform ol,
+	.longform ul {
+		@apply leading-loose;
+	}
+	
+	.longform ol {
+		@apply list-decimal;
+		@apply pl-4;
+	}
+	
+	.longform ul {
+		@apply list-disc;
+		@apply pl-4;
 	}
 }
 

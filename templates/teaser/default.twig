@@ -1,0 +1,20 @@
+{% set asset = entry.image.asset.one() %}
+
+{% block teaser %}
+<article class="teaser {{ entry.section.handle }} {% block blockClasses %}{% endblock %}">
+	<a href="{{ entry.url }}" class="no-underline flex flex-col-reverse lg:flex-row lg:items-center gap-5 lg:gap-10 {% block linkClasses %}{% endblock %}">
+		{% block teaserContent %}
+		<div class="flex-1">
+			{% block teaserMeta %}<p class="mb-2 body-xs text-see-text-body"><time>{{ entry.postDate.format("F j, Y") }}</time></p>{% endblock %}
+			<h3 class="group-hover:underline">{{ entry.title }}</h3>
+			{% block teaserInnerContent %}
+			<div>{{ entry.description }}</div>
+			{% endblock %}
+		</div>
+		{% if asset %}
+		<img class="lg:w-1/3 aspect-3/2 object-cover rounded-lg {% block imageClasses %}{% endblock %}" src="{{ asset.getUrl('large') }}" alt="{{ asset.title }}">
+		{% endif %}
+		{% endblock %}
+	</a>
+</article>
+{% endblock %}

@@ -1,4 +1,4 @@
-dateModified: 1761618485
+dateModified: 1761661880
 email:
   fromEmail: hello@ambrosiaspace.com
   fromName: 'Ambrosia Space Manufacturing Corporation'
@@ -19,8 +19,10 @@ meta:
   __names__:
     1d209306-01a4-4dc7-bc72-da0723fee5aa: Header # Header
     4e561f16-ec34-404b-aff8-9759d01bb5c1: 'Rich Text' # Rich Text
+    6c3b0874-1048-4f1e-8133-3f2d651eb37b: Channels # Channels
     6fdfbe08-3bed-49e1-806c-1ae77457186d: Pages # Pages
     07bb3e53-0436-4795-8747-6138f3960508: 'Link List' # Link List
+    10a28c25-e44f-44dd-9c2d-0abd4ff8f677: Updates # Updates
     45a00e92-2550-47ce-b789-33064e5da296: Ambrosia # Ambrosia
     46c73757-35e7-4b10-b847-51ab5433328d: Hyperlink # Hyperlink
     54f64a1d-1fa2-4197-aa96-6c979d97fcc6: Page # Page
@@ -49,11 +51,13 @@ meta:
     b2c03297-44b8-40b1-82cd-001bf51011e8: Feature # Feature
     c20da1f2-432b-4f57-a5df-412d795323e0: Assets # Assets
     e2b96770-e496-40d4-9d40-ef0d10c51ffa: Images # Images
+    e25bf06d-bad3-4352-bf56-44988e8e77fd: Post # Post
     e527ad7b-f272-4e6d-97c6-ab32252afa11: 'Big Text' # Big Text
     e32214a7-85d3-48e4-94c3-3aec995098d1: 'Grid Item' # Grid Item
     e8458783-3f6a-43e3-8b85-f6b6ec9c2974: 'Top Decorator' # Top Decorator
     f6b01801-37c0-4e3f-ad44-20d619226d7d: 'Bottom Decorator' # Bottom Decorator
     f8f44cc1-2ad4-406c-b5ee-6f9f213c5501: 'Small Square' # Small Square
+    ff53a44e-aa10-41a7-a7bd-0081b7595b65: 'Listing Page' # Listing Page
 plugins:
   ckeditor:
     edition: standard
