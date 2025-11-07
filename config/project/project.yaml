@@ -1,4 +1,4 @@
-dateModified: 1761661880
+dateModified: 1762486583
 email:
   fromEmail: hello@ambrosiaspace.com
   fromName: 'Ambrosia Space Manufacturing Corporation'
@@ -33,6 +33,7 @@ meta:
     89af2a35-e134-4f85-a55c-244e847bbb71: Full # Full
     98e1c883-e4bb-4f43-b092-59d0bf6b3bc8: People # People
     190a6916-6a81-4626-a188-9c9e95a060c2: 'People Listing' # People Listing
+    695f41bc-8f05-4aac-97ff-9bf94b8b1b7e: 'Long Text' # Long Text
     703d0ba8-0c19-40a0-badf-501c9c9c54f2: Position # Position
     712e2ee5-eb54-4224-b7a1-fc87c8832892: Lightswitch # Lightswitch
     851aa807-5042-4526-a6a9-1a107ba6ce66: Grid # Grid

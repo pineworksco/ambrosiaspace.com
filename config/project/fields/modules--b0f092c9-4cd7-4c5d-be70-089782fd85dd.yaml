@@ -28,6 +28,14 @@ settings:
       __assoc__:
         -
           - uid
+          - 695f41bc-8f05-4aac-97ff-9bf94b8b1b7e # Long Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 851aa807-5042-4526-a6a9-1a107ba6ce66 # Grid
         -
           - group
