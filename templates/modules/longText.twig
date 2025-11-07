@@ -13,7 +13,7 @@
 		<p class="font-mono text-xs md:text-sm">{{ block.eyebrow }}</p>
 		{% endif %}
 		{% if block.title %}
-		<h2 class="my-6 xl:my-8 font-bold text-2xl xs:text-4xl xl:text-5xl leading-[1.1] {% if block.darkMode %}text-asmc-blue{% else %}text-asmc-gold{% endif %}">{{ block.title }}</h2>
+		<h2 class="{% if block.title and block.text|striptags|length < 400 %}{% else %}my-6{% endif %} xl:my-8 font-bold text-2xl xs:text-4xl xl:text-5xl leading-[1.1] {% if block.darkMode %}text-asmc-blue{% else %}text-asmc-gold{% endif %}">{{ block.title }}</h2>
 		{% endif %}
 		</div>
 		{% endif %}
