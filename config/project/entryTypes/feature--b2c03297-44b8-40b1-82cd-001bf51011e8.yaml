@@ -8,6 +8,23 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-10-26T20:44:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a9b52af2-d6a8-44b8-8158-9d3be52a0d3b # Plain Text
+            handle: eyebrow
+            includeInCards: false
+            instructions: 'The small text that appears visually above the title.'
+            label: Eyebrow
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a6fc538-caf5-4798-a7fa-4830353286e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -27,30 +44,13 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            required: true
+            required: false
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 0e7e089d-6a06-47ef-9e53-89909921a860
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-10-26T20:44:47+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: a9b52af2-d6a8-44b8-8158-9d3be52a0d3b # Plain Text
-            handle: eyebrow
-            includeInCards: false
-            instructions: 'The small text that appears visually above the title.'
-            label: Eyebrow
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9a6fc538-caf5-4798-a7fa-4830353286e9
             userCondition: null
             warning: null
             width: 100
