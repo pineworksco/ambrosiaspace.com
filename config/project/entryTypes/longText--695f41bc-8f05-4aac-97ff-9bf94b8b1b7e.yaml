@@ -112,7 +112,7 @@ fieldLayouts:
             uid: e822cdf6-e30a-49d0-b1b6-6c45681d0318
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             dateAdded: '2025-11-07T03:36:23+00:00'
             editCondition: null
@@ -129,7 +129,7 @@ fieldLayouts:
             uid: 8d47be55-5751-4765-aa71-329bebf2d104
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             dateAdded: '2025-11-07T03:36:23+00:00'
             editCondition: null
@@ -146,7 +146,7 @@ fieldLayouts:
             uid: 6ac2e1c8-d251-4492-ac5c-9e1138ff9b86
             userCondition: null
             warning: null
-            width: 100
+            width: 25
         name: Appearance
         uid: fdeb66a7-4f35-4a7f-b752-e53dfb71f158
         userCondition: null
