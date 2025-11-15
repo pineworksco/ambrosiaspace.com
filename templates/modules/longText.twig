@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block blockContent %}
-<div class="max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16 {% if not block.topSpacing %}!pt-1{% endif %} {% if not block.bottomSpacing %}!pb-1{% endif %}">
+<div class="max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16 {% if not block.topSpacing %}!pt-0.5{% endif %} {% if not block.bottomSpacing %}!pb-0.5{% endif %}">
 	<article class="flex flex-col {% if block.title and block.text|striptags|length < 400 %}md:flex-row md:gap-16{% endif %} items-start justify-center p-6 md:p-8 lg:p-12 xl:p-16 bg-white text-asmc-black rounded-sm {% if block.imagePosition == 'left' %}order-2{% endif %}">
 		{% if block.eyebrow or block.title %}
 		<div class="{% if block.title and block.text|striptags|length < 400 %}md:w-1/2 md:mt-1{% endif %}">

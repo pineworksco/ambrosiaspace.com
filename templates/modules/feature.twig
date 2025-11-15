@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block blockContent %}
-<div class="flex flex-col md:flex-row gap-1 max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16 {% if not block.topSpacing %}!pt-1{% endif %} {% if not block.bottomSpacing %}!pb-1{% endif %}">
+<div class="flex flex-col md:flex-row gap-1 max-w-7xl mx-auto px-4 py-8 lg:px-8 lg:py-16 {% if not block.topSpacing %}!pt-0.5{% endif %} {% if not block.bottomSpacing %}!pb-0.5{% endif %}">
 	<article class="flex flex-col items-start justify-center md:w-1/2 p-6 md:p-8 lg:p-12 xl:p-16 bg-white text-asmc-black rounded-sm {% if block.imagePosition == 'left' %}order-2{% endif %}">
 		{% if block.eyebrow %}
 		<p class="font-mono text-xs md:text-sm">{{ block.eyebrow }}</p>
